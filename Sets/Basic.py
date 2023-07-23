@@ -321,3 +321,117 @@ print(d)
 print(type(d))
 
 #  ---------------------------------------------
+# Empty set,list,tuple,dictionary
+
+
+Home » Python » Sets in Python
+Sets in Python
+Updated on: July 19, 2022 | 16 Comments
+
+In Python, a Set is an unordered collection of data items that are unique. In other words, Python Set is a collection of elements (Or objects) that contains no duplicate elements.
+
+Unlike List, Python Set doesn’t maintain the order of elements, i.e., It is an unordered data set. So you cannot access elements by their index or perform insert operation using an index number.
+
+In this tutorial, we will learn Set data structure in general, different ways of creating them, and adding, updating, and removing the Set items. We will also learn the different set operations.
+
+Also See:
+
+Python Set Exercise
+Python Set Quiz
+Python Sets
+Python Sets
+Characteristics of a Set
+
+A set is a built-in data structure in Python with the following three characteristics.
+
+Unordered: The items in the set are unordered, unlike lists, i.e., it will not maintain the order in which the items are inserted. The items will be in a different order each time when we access the Set object. There will not be any index value assigned to each item in the set.
+Unchangeable: Set items must be immutable. We cannot change the set items, i.e., We cannot modify the items’ value. But we can add or remove items to the Set. A set itself may be modified, but the elements contained in the set must be of an immutable type.
+Unique: There cannot be two items with the same value in the set.
+Table of contents
+Creating a Set
+Create a set from a list
+Creating a set with mutable elements
+Empty set
+Accessing items of a set
+Checking if an item exists in Set
+Find the length of a set
+Adding items to a Set
+Removing item(s) from a set
+remove() vs discard()
+Set Operations
+Union of sets
+Intersection of Sets
+Intersection update
+Difference of Sets
+Difference update
+Symmetric difference of Sets
+Symmetric difference update
+Copying a Set
+Subset and Superset
+find whether two sets are disjoint
+Sort the set
+Using Python built-in functions for Set
+all() and any()
+max() and min()
+Frozen Set
+When to use frozenset ?
+Nested Sets
+Set comprehension
+When to use a Set Data structure?
+Creating a Set
+There are following two ways to create a set in Python.
+
+Using curly brackets: The easiest and straightforward way of creating a Set is by just enclosing all the data items inside the curly brackets {}. The individual values are comma-separated.
+Using set() constructor: The set object is of type class 'set'. So we can create a set by calling the constructor of class ‘set’. The items we pass while calling are of the type iterable. We can pass items to the set constructor inside double-rounded brackets.
+Let’s see each one of them with an example.
+
+# create a set using {}
+# set of mixed types intger, string, and floats
+sample_set = {'Mark', 'Jessa', 25, 75.25}
+print(sample_set)
+# Output {25, 'Mark', 75.25, 'Jessa'}
+
+# create a set using set constructor
+# set of strings
+book_set = set(("Harry Potter", "Angels and Demons", "Atlas Shrugged"))
+print(book_set)
+# output {'Harry Potter', 'Atlas Shrugged', 'Angels and Demons'}
+
+print(type(book_set))
+# Output class 'set'
+ Run
+Note:
+
+As we can see in the above example the items in the set can be of any type like String, Integer, Float, or Boolean. This makes a Set Heterogeneous i.e. items of different types can be stored inside a set.
+Also, the output shows all elements are unordered.
+Create a set from a list
+Also, set eliminating duplicate entries so if you try to create a set with duplicate items it will store an item only once and delete all duplicate items. Let’s create a set from an iterable like a list. We generally use this approach when we wanted to remove duplicate items from a list.
+
+Example
+
+# list with duplicate items
+number_list = [20, 30, 20, 30, 50, 30]
+# create a set from a list
+sample_set = set(number_list)
+
+print(sample_set)
+# Output {50, 20, 30}
+#
+# Creating a set with mutable elements
+# You will get an error if you try to create a set with mutable elements like lists or dictionaries as its elements.
+
+# set of mutable types
+sample_set = {'Mark', 'Jessa', [35, 78, 92]}
+print(sample_set)
+# # Output TypeError: unhashable type: 'list' [35, 78, 92]
+
+# Empty set
+# When we don’t pass any item to the set constructor then it will create an empty set.
+#
+# empty_set = set()
+# print(type(empty_set))
+# # class 'set'
+#  Run
+# When the same object ‘person’ is created without any items inside the curly brackets
+# then it will be created as a dictionary which is another built-in data structure in Python.
+# So whenever you wanted to create an empty set always use the set() constructor.

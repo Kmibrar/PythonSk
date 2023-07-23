@@ -296,3 +296,28 @@ sample_tuple = tuple((1, 2, 3, "Hello", [4, 8, 16]))
 # iterate a tuple
 for item in sample_tuple:
     print(item)
+
+
+#     ---------------------------------- Practice
+a={}
+# a = {1,2}
+print(a)
+print(type(a))
+
+
+b = []
+# b = [1,2]
+print(b)
+print(type(b))
+
+c=()
+# c = (1,2)
+print(c)
+print(type(c))
+
+d={}
+# d = {"a": 4}
+print(d)
+print(type(d))
+
+#  ---------------------------------------------

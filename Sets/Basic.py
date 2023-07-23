@@ -274,3 +274,14 @@ i, j, k = tuple1
 # printing the variables
 print(i, j, k)
 # Output 1 2 Hello
+
+
+
+# Length of a Tuple
+# We can find the length of the tuple using the len() function.
+# This will return the number of items in the tuple.
+
+tuple1 = ('P', 'Y', 'T', 'H', 'O', 'N')
+# length of a tuple
+print(len(tuple1))
+# Output 6

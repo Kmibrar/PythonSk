@@ -285,3 +285,14 @@ tuple1 = ('P', 'Y', 'T', 'H', 'O', 'N')
 # length of a tuple
 print(len(tuple1))
 # Output 6
+
+
+
+# Iterating a Tuple
+# We can iterate a tuple using a for loop Let us see this with an example.
+
+# create a tuple
+sample_tuple = tuple((1, 2, 3, "Hello", [4, 8, 16]))
+# iterate a tuple
+for item in sample_tuple:
+    print(item)

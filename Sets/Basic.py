@@ -481,3 +481,42 @@ book_set.update(['Atlas Shrugged', 'Ulysses'])
 # display the updated set
 print(book_set)
 # Output {'The God of Small Things', 'Angels and Demons', 'Atlas Shrugged', 'Harry Potter', 'Ulysses'}
+
+
+
+
+# Removing item(s) from a set
+Method	Description
+remove()	To remove a single item from a set. This method will take one parameter, which is the item to be removed from the set. Throws a keyerror if an item not present in the original set
+discard()	To remove a single item that may or may not be present in the set. This method also takes one parameter, which is the item to be removed. If that item is present, it will remove it. It will not throw any error if it is not present.
+pop()	To remove any random item from a set
+clear()	To remove all items from the Set. The output will be an empty set
+del set	Delete the entire set
+Python Set methods to remove items
+Let’s see an example to delete single or multiple items from a set.
+
+Example
+
+color_set = {'red', 'orange', 'yellow', 'white', 'black'}
+
+# remove single item
+color_set.remove('yellow')
+print(color_set)
+# Output {'red', 'orange', 'white', 'black'}
+
+# remove single item from a set without raising an error
+color_set.discard('white')
+print(color_set)
+# Output {'orange', 'black', 'red'}
+
+# remove any random item from a set
+deleted_item = color_set.pop()
+print(deleted_item)
+
+# remove all items
+color_set.clear()
+print(color_set)
+# output set()
+
+# delete a set
+del color_set

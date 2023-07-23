@@ -432,7 +432,14 @@ print(sample_set)
 # print(type(empty_set))
 # # class 'set'
 #  Run
-# Note(alway create empty SET AND dictionary where Set will create with Constructor.
+# Note(always create empty SET AND dictionary where Set will create with Constructor.
 # When the same object ‘person’ is created without any items inside the curly brackets
 # then it will be created as a dictionary which is another built-in data structure in Python.
 # So whenever you wanted to create an empty set always use the set() constructor.
+
+
+
+# Accessing items of a set
+book_set = {"Harry Potter", "Angels and Demons", "Atlas Shrugged"}
+for book in book_set:
+    print(book)

@@ -457,3 +457,27 @@ else:
 # check another item which is not present inside a set
 print("A Man called Ove" in book_set)
 # Output False
+
+
+# Find the length of a set
+# To find the length of a Set, we use the len() method. This method requires one parameter to be passed, the set’s name whose size we need to find.
+
+# create a set using set constructor
+book_set = {"Harry Potter", "Angels and Demons", "Atlas Shrugged"}
+print(len(book_set))
+# Output 3
+
+
+# Adding items to a Set
+book_set = {'Harry Potter', 'Angels and Demons'}
+# add() method
+book_set.add('The God of Small Things')
+# display the updated set
+print(book_set)
+# Output {'Harry Potter', 'The God of Small Things', 'Angels and Demons'}
+
+# update() method to add more than one item
+book_set.update(['Atlas Shrugged', 'Ulysses'])
+# display the updated set
+print(book_set)
+# Output {'The God of Small Things', 'Angels and Demons', 'Atlas Shrugged', 'Harry Potter', 'Ulysses'}

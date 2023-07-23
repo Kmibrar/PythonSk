@@ -443,3 +443,17 @@ print(sample_set)
 book_set = {"Harry Potter", "Angels and Demons", "Atlas Shrugged"}
 for book in book_set:
     print(book)
+
+
+
+# Checking if an item exists in Set
+book_set = {"Harry Potter", "Angels and Demons", "Atlas Shrugged"}
+if 'Harry Potter' in book_set:
+    print("Book exists in the book set")
+else:
+    print("Book doesn't exist in the book set")
+# Output Book exists in the book set
+
+# check another item which is not present inside a set
+print("A Man called Ove" in book_set)
+# Output False
